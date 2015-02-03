@@ -1,0 +1,108 @@
+/* 
+ * This is the custom SASS files which I used to make the design responsive
+ *
+ *
+ * Note: I have chosen 600px for the mobile view, it can be any other value
+ */
+
+@media (max-width: 600px) {
+	// Expanding the article which wraps the body
+	article {
+		width:100%;
+		margin:0px;
+		
+		header {
+			// Centering the header
+			float:none;
+			
+			// Centering the header logo
+			img { 
+				margin:0 auto;
+				float:none;
+				display:block;
+			}
+			
+			// Centering and making the heading smaller
+			h1 {
+				font-size:40px;
+				text-align:center;
+				float:none;
+				height:80px;
+				line-height:80px;
+				
+				// Removing the | element from the mobile design
+				&:before { content:""; }
+			}
+		}
+		
+		// Changed the width of the nav element to fill the screen
+		nav {
+			width:100%;
+			
+			// Making the navigation menu full size of the screen
+			.ui-tabs-nav {
+				width:100%;
+				
+				// Making the navigation options to fall one under one another and giving them a seperating border
+				li {
+					display:block;
+					border-bottom:2px solid #fff;
+					
+					// Removing the border from the last element
+					&:last-child { border-bottom:none; }
+				}
+			}
+		}
+		
+		// Set the width to fill in the screen
+		#sass, #sems, #shs, #soi { // Fixed the design to be responsive for all the pages
+			width: 100%;
+			
+			// Set the width to be calculated by the browser so it doesn't break the design
+			ul li {
+				width:auto;
+				
+				// Set the width to be calculated by the browser so it doesn't break the design	
+				figure {
+					width:auto;
+					
+					// Set the width of the image to 70% of the original size
+					img {
+						width:70%;
+						height:auto;
+						margin:0 40px;
+					}
+				}
+			}
+			
+			//figcaption { text-align:center; }
+			
+			// Moved the previous button closer to the left
+			.jcarousel-control-prev { left:5px; }
+			
+			// Moved the next button closer to the right
+			.jcarousel-control-next { right:5px; }
+			
+			// Moved both buttons closer to the top
+			.jcarousel-control-prev, .jcarousel-control-next { top:100px; }
+		}
+		
+		// Modified the sidebar so it stretches accross the page and made the font size bigger
+		section#sidebar {
+			margin:10px;
+			width:auto;
+			font-size:12px;
+		}
+		
+		// Set the width of the footer to be calculated by the browser so it doesn't break the design
+ 		footer { 
+			width:auto;
+			text-align:center;
+		}
+		
+		// Made the text of the footer the same size as the one in the sidebar. I prefer to keep it consistant
+		footer p { font-size:12px; }
+		
+	// The End
+	}
+}

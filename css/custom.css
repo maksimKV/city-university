@@ -1,0 +1,39 @@
+/*  This is the custom SASS files which I used to make the design responsive   Note: I have chosen 600px for the mobile view, it can be any other value */
+@media (max-width: 600px) { /* line 10, ../sass/custom.scss */
+  article { width: 100%; margin: 0px; }
+  /* line 14, ../sass/custom.scss */
+  article header { float: none; }
+  /* line 19, ../sass/custom.scss */
+  article header img { margin: 0 auto; float: none; display: block; }
+  /* line 26, ../sass/custom.scss */
+  article header h1 { font-size: 40px; text-align: center; float: none; height: 80px; line-height: 80px; }
+  /* line 34, ../sass/custom.scss */
+  article header h1:before { content: ""; }
+  /* line 39, ../sass/custom.scss */
+  article nav { width: 100%; }
+  /* line 43, ../sass/custom.scss */
+  article nav .ui-tabs-nav { width: 100%; }
+  /* line 47, ../sass/custom.scss */
+  article nav .ui-tabs-nav li { display: block; border-bottom: 2px solid #fff; }
+  /* line 52, ../sass/custom.scss */
+  article nav .ui-tabs-nav li:last-child { border-bottom: none; }
+  /* line 58, ../sass/custom.scss */
+  article #sass, article #sems, article #shs, article #soi { width: 100%; }
+  /* line 62, ../sass/custom.scss */
+  article #sass ul li, article #sems ul li, article #shs ul li, article #soi ul li { width: auto; }
+  /* line 66, ../sass/custom.scss */
+  article #sass ul li figure, article #sems ul li figure, article #shs ul li figure, article #soi ul li figure { width: auto; }
+  /* line 70, ../sass/custom.scss */
+  article #sass ul li figure img, article #sems ul li figure img, article #shs ul li figure img, article #soi ul li figure img { width: 70%; height: auto; margin: 0 40px; }
+  /* line 81, ../sass/custom.scss */
+  article #sass .jcarousel-control-prev, article #sems .jcarousel-control-prev, article #shs .jcarousel-control-prev, article #soi .jcarousel-control-prev { left: 5px; }
+  /* line 84, ../sass/custom.scss */
+  article #sass .jcarousel-control-next, article #sems .jcarousel-control-next, article #shs .jcarousel-control-next, article #soi .jcarousel-control-next { right: 5px; }
+  /* line 87, ../sass/custom.scss */
+  article #sass .jcarousel-control-prev, article #sass .jcarousel-control-next, article #sems .jcarousel-control-prev, article #sems .jcarousel-control-next, article #shs .jcarousel-control-prev, article #shs .jcarousel-control-next, article #soi .jcarousel-control-prev, article #soi .jcarousel-control-next { top: 100px; }
+  /* line 91, ../sass/custom.scss */
+  article section#sidebar { margin: 10px; width: auto; font-size: 12px; }
+  /* line 98, ../sass/custom.scss */
+  article footer { width: auto; text-align: center; }
+  /* line 104, ../sass/custom.scss */
+  article footer p { font-size: 12px; } }
